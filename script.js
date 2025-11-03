@@ -4,12 +4,13 @@ class Animal {
 		this.Species = species
 	}
 	makeSound(){
-		console.log(`the ${this.Species } makes a sound`)
+		console.log(`The ${this.Species } makes a sound`)
 	}
 }
 
 class Dog extends Animal {
-	super(species)
+	constructor(Species)
+	super(Species)
 	bark(){
 		console.log("woof")
 	}
@@ -25,11 +26,11 @@ class Cat extends Animal {
 
 const myCat = new Cat("Siamese") 
 myCat.makeSound()
-myCat.pur
+myCat.pur()
 
 const myDog = new Dog("Golden Retriever")
 myDog.makeSound()
-myDog.bark
+myDog.bark()
 
 // Do not change the code below this line
 window.Animal = Animal;
